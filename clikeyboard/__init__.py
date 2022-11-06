@@ -2,6 +2,7 @@ from typing import Callable
 
 from ._listener import Handler, Listener
 from .keys import Keys
+from .event import KeyEvent
 
 
 _listener = Listener()
