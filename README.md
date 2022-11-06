@@ -8,14 +8,14 @@ Python module for handling keyboard event.
 # Usage
 
 ```python
-from keyboard import Keys, on_press
+from clikeyboard import KeyEvent, Keys, on_press
 
-def on_press_a() -> None:
-   print('Pressed "a"')
+def on_event(event: KeyEvent) -> None:
+    print(f'Pressed "{event.key}"')
 
-def on_press_ctrl_c() => None:
-   print('Pressed "Ctrl+C"')
+on_press('a', on_event)
+on_press(Keys.CONTROL_D, on_event)
 
-on_press('a', on_press_a)
-on_press(Keys.CTRL_C, on_press_ctrl_c)
+while 1:
+    pass
 ```
