@@ -2,6 +2,8 @@
 
 Python module for handling keyboard event.
 
+This module is sample code for [my article](https://zenn.dev/k_kuroguro/articles/e8437cdf6d804f) (Japanese).
+
 > **Note**
 > This module supports only Windows.
 
